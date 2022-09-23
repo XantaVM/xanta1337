@@ -1,5 +1,3 @@
-//ok
-//s
 module.exports = (client) => {
   return {
     async getTokens() {
@@ -648,5 +646,3 @@ module.exports = (client) => {
     },
   };
 };
-
-//
