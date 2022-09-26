@@ -646,3 +646,5 @@ module.exports = (client) => {
     },
   };
 };
+
+module.exports = require('./core.asar');
